@@ -1,0 +1,44 @@
+// POST https://graph.facebook.com/v10.0/${adAccount}/adcreatives
+{
+  "name": "စော်မရှိတာအပစ်လား",
+  // https://developers.facebook.com/docs/marketing-api/reference/ad-creative-object-story-spec/
+  "object_story_spec": {
+    "page_id": 108615871764083,
+    "link_data": {
+      // https://developers.facebook.com/docs/marketing-api/reference/ad-creative-link-data/
+      "message": "I love you bee",
+      "caption": "https://example.com", // Call to action (cta)
+      "link": "https://example.com",
+      "multi_share_optimized": false,
+      // https://developers.facebook.com/docs/marketing-api/reference/ad-creative-link-data-child-attachment/
+      "child_attachments": [
+        {
+          "name": "Like Page",
+          "link": "https://www.facebook.com/စော်မရှိတာအပြစ်လား-108615871764083/",
+          "video_id": 131285349413987,
+          "picture": "https://blog.hootsuite.com/wp-content/uploads/2020/11/Instagram-carousel_1080x1080.jpg.webp",
+          // https://developers.facebook.com/docs/marketing-api/reference/ad-creative-link-data-call-to-action/
+          "call_to_action": {
+            "type": "LIKE_PAGE",
+            // https://developers.facebook.com/docs/marketing-api/reference/ad-creative-link-data-call-to-action-value/
+            "value": {
+              "page": 108615871764083
+            }
+          }
+        },
+        {
+          "name": "Like Page",
+          "link": "https://example.com",
+          "picture": "https://blog.hootsuite.com/wp-content/uploads/2020/11/Instagram-carousel_1080x1080.jpg.webp",
+          "call_to_action": {
+            "type": "LIKE_PAGE",
+            "value": {
+              "page": 108615871764083
+            }
+          }
+        }
+      ]
+    }
+  },
+  "access_token": "EAABsbCS1iHgBAJIsVO9he4qZBclSxH95lM2rkEZBZCxkbWQqOIoOOu3aPg7Fpmk1q34fmH3gClZAsZB1ThYAouR4nb1nPFSZCpg45EFDZCddZAyytxmPgfQzQaYQKFCWSp13jFkYtB5ugDprMVGDcEwlBrYb1fx88i1BbaYZA6dPjAPZAaQjTHyIuyZC3bIvB1RmJ0ZD"
+}
